@@ -26,5 +26,5 @@
 body {
     background-color: var(--color-cream);
     color: var(--color-dark);
-
+    font-family: var(--font-oswald);
 }
