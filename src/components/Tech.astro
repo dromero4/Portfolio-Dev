@@ -1,9 +1,10 @@
 ---
 import { TECNOLOGIAS } from "@utils/tecnologias.js";
+import Title from './page/title.astro';
 ---
 
 <section id="tecnologias">
-    <h1 class="text-3xl font-bold text-primary glow">Tecnologías más usadas</h1>
+    <Title title="Tecnologías más usadas" />
     <div class="grid grid-cols-10 gap-5 md:grid-cols-5 text-sm mt-5">
         {
             TECNOLOGIAS.map((tecnologia) => (
