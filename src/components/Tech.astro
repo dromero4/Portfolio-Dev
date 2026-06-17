@@ -1,0 +1,21 @@
+---
+import { TECNOLOGIAS } from "@utils/tecnologias.js";
+---
+
+<section id="tecnologias">
+    <h1 class="text-3xl font-bold text-primary glow">Tecnologías más usadas</h1>
+    <div class="grid grid-cols-10 gap-5 md:grid-cols-5 text-sm mt-5">
+        {
+            TECNOLOGIAS.map((tecnologia) => (
+                <article>
+                    <img 
+                        src={tecnologia.icon} 
+                        alt={tecnologia.title}
+                        class="w-20 h-20 object-contain
+                        md:w-30 md:h-30
+                        hover:scale-102 transition all"/>
+                </article>
+            ))
+        }
+    </div>
+</section>
