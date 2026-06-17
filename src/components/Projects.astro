@@ -1,22 +1,47 @@
 ---
-import Title from './page/title.astro';
+import Title from "./page/title.astro";
 ---
 
 <section id="proyectos">
-    
     <Title title="Proyectos" />
-    <article class="flex flex-row gap-10">
-
-        <div>
-            <img 
-            src="images/Proyecto-1.png" 
-            alt="Proyecto e-commerce de ropa téxtil personalizable"
-            class="w-lg rounded-lg">
+    <article class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div class="md:col-span-8 md:row-span-2">
+            <img
+                src="images/Proyecto-1.png"
+                alt="Proyecto e-commerce de ropa téxtil personalizable"
+                class="rounded-lg
+                h-full w-full object-cover"
+            />
         </div>
-        <div>
-            <h1 class="text-3xl font-bold mb-2">The Good Decisions</h1>
-            <p>E-Commerce de ropa personalizable.</p>
-            <p>Creado desde 0 con React, NextJS y TailwindCSS</p>
+        <div class="md:col-span-4 flex flex-col justify-between">
+            <div class="mb-4">
+
+                <h1 class="text-2xl md:text-3xl font-bold mb-2">
+                    The Good Decisions
+                </h1>
+                <p>E-Commerce de ropa personalizable.</p>
+                <p>Creado desde 0 con React, NextJS y TailwindCSS.</p>
+            </div>
+                
+            <!-- Separar más adelante -->
+            <div class="md:col-span-5 flex flex-wrap gap-2 ">
+                <div class="gap-2 items-center bg-blue-100 border border-blue-400 rounded-full px-2 py-1 flex">
+                    <img src="/images/dev/React.webp" alt="React pill image" class="size-3" />
+                    <p class="text-blue-400">React</p>
+                </div>
+                <div class="gap-2 items-center bg-zinc-800 border border-zinc-400 rounded-full px-2 py-1 flex">
+                    <img src="/images/dev/NextJS.webp" alt="NextJS pill image" class="size-3" />
+                    <p class="text-white">NextJS</p>
+                </div>
+                <div class="gap-2 items-center bg-blue-600 border border-blue-400 rounded-full px-2 py-1 flex">
+                    <img src="/images/dev/TailwindCSS.png" alt="Tailwind pill image" class="size-3" />
+                    <p class="text-blue-100">TailwindCSS</p>
+                </div>
+                <div class="gap-1 items-center bg-blue-700 border border-blue-400 rounded-full px-2 py-1 flex">
+                    <img src="/images/dev/Prisma.webp" alt="Tailwind pill image" class="size-5" />
+                    <p class="text-blue-100">Prisma</p>
+                </div>
+            </div>
         </div>
     </article>
 </section>
