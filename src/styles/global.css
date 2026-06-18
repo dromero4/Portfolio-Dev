@@ -22,7 +22,7 @@
 }
 
 @theme {
-  --color-primary: #C6A15B;
+  --color-primary: #a08148 ;
   --color-secondary: #6B7280;
   --color-dark: #101010;
   --color-cream: #EFEFEF;
@@ -41,6 +41,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.glow {
+/* .glow {
     text-shadow: 0px 0px 32px var(--color-primary);
-}
+} */
