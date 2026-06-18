@@ -1,8 +1,39 @@
 ---
 import Title from "./page/title.astro";
 
+import GitHub from "@assets/github.astro";
+import Gmail from "@assets/gmail.astro";
+import Linkedin from "@assets/linkedin.astro";
 ---
 
 <section id="contacto">
     <Title title="Contacto" />
+
+    <div>
+        <p>
+            ¡Aquí podrás encontrar mis redes y mi correo por si te interesa
+            contactar conmigo!
+        </p>
+    </div>
+
+    <section class="flex gap-3 mt-3">
+        <a href="https://github.com/dromero4" target="_blank"
+        class="border rounded-full flex hover:bg-zinc-300 hover:border-zinc-800 hover:scale-105 transition-all">
+            <GitHub 
+            class="size-5"/>
+            <p class="text-sm mx-2">GitHub</p>
+        </a>
+        <a href="mailto:dev.davidromero9@gmail.com" target="_blank" 
+        class="border rounded-full flex hover:bg-zinc-300 hover:border-zinc-800 hover:scale-105 transition-all">
+            <Gmail 
+            class="size-5 rounded-full"/>
+            <p class="text-sm mx-2">Gmail</p>
+        </a>
+        <a href="https://www.linkedin.com/in/david-romero-bb8187233" target="_blank" 
+        class="border rounded-full flex hover:bg-zinc-300 hover:border-zinc-800 hover:scale-105 transition-all">
+            <Linkedin 
+            class="size-5 rounded-full"/>
+            <p class="text-sm mx-2">LinkedIn</p>
+        </a>
+    </section>
 </section>
