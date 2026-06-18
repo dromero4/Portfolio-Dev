@@ -31,7 +31,8 @@
 }
 
 body {
-    background-color: var(--color-cream);
+    background: linear-gradient(rgb(255, 255, 230), var(--color-cream));
+    background-attachment: fixed;
     color: var(--color-dark);
     font-family: var(--font-oswald);
     cursor: default;
